@@ -6,7 +6,7 @@ venv/
 .env
 
 # Nodejs
-node_modules/
+frontend/node_modules
 .next/git 
 dist/
 build/
