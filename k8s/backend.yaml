@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: edustream-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: edustream-backend
+  template:
+    metadata:
+      labels:
+        app: edustream-backend
+    spec:
+      containers:
+      - name: backend
+        image: testethical/edustream-backend:v1
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000
+        env:
+        - name: DATABASE_URL
+          value: "postgresql://admin:root@edustream-db-service:5432/edustream"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: edustream-backend-service
+spec:
+  selector:
+    app: edustream-backend
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
+  type: NodePort
