@@ -1,11 +1,15 @@
 from fastapi import FastAPI, Depends, HTTPException, status, UploadFile, File
 import shutil
+from database import engine, SessionLocal, Base
 from fastapi.responses import FileResponse
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
 from pydantic import BaseModel
 from passlib.context import CryptContext 
+from sqladmin import Admin, ModelView
+from database import engine
+from models import User
 import os
 
 # --- Database Setup ---
@@ -14,13 +18,7 @@ engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
-# --- Models ---
-class User(Base):
-    __tablename__ = "users"
-    id = Column(Integer, primary_key=True, index=True)
-    email = Column(String, unique=True, index=True)
-    password = Column(String)
-    role = Column(String) 
+
 
 Base.metadata.create_all(bind=engine)
 
@@ -46,6 +44,14 @@ def get_db():
 
 # --- App ---
 app = FastAPI()
+admin = Admin(app,engine)
+class UserAdmin(ModelView,model=User):
+    column_list = [User.id,User.email,User.username,User.is_superuser]
+    colum_details_exclude_list = [User.password]
+    name = "User"
+    name_plural = "Users"
+    icon = "fa-solid fa-user"
+admin.add_view(UserAdmin)
 
 # Enable CORS 
 from fastapi.middleware.cors import CORSMiddleware
