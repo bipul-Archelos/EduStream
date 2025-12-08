@@ -5,8 +5,7 @@ psycopg2-binary
 passlib[bcrypt]
 python-jose[cryptography]
 python-multipart
-reportlab
+google-generativeai
 razorpay
-jwt-decode
-
-
+python-dotenv
+# jwt-decode  <-- YE LINE HATA DO
