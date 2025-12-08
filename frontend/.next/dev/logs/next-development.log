@@ -1,8 +1,104 @@
-[00:00:02.768] Server  LOG      ✓ Ready in 2.2s
-[00:00:14.676] Server  LOG      ○ Compiling / ...
-[03:39:31.739] Server  LOG        Reload env: .env.local
-[03:39:39.224] Server  LOG        Reload env: .env.local
-[03:41:10.627] Server  LOG      ✓ Compiled in 956ms
-[03:43:26.670] Server  LOG      ✓ Compiled in 601ms
-[03:53:34.829] Server  LOG      ✓ Compiled in 108ms
-[03:54:11.187] Server  LOG      ✓ Compiled in 104ms
+[00:00:03.860] Server  LOG      ✓ Ready in 2.4s
+[00:00:39.733] Server  LOG      ○ Compiling / ...
+[00:09:17.911] Server  LOG      ✓ Compiled in 392ms
+[00:45:08.977] Server  LOG      ✓ Compiled in 124ms
+[00:49:59.473] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:06:08.429] Server  LOG      ✓ Compiled in 1245ms
+[01:06:12.297] Server  LOG      ✓ Compiled in 2.1s
+[01:07:24.329] Server  LOG      ✓ Compiled in 454ms
+[01:08:42.856] Server  LOG      ✓ Compiled in 214ms
+[01:10:33.756] Server  LOG      ✓ Compiled in 174ms
+[01:10:34.729] Browser ERROR   {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzdHVkZW50MUBnbWFpbC5jb20iLCJleHAiOjE3NjUxNzQ1OTh9.qZl1TjncVoxdOZIBZkwwJgn0RdEVT5g0GCqlm68Jpxk"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"http://127.0.0.1:8000/profile","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_121bda61._.js:3706:16\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_121bda61._.js:4221:174\n","status":401}
+[01:12:00.409] Server  LOG      ✓ Compiled in 94ms
+[01:14:57.550] Server  LOG      ✓ Compiled in 390ms
+[01:16:35.128] Server  LOG      ✓ Compiled in 404ms
+[01:20:09.865] Server  LOG      ✓ Compiled in 177ms
+[01:20:18.324] Server  LOG      ✓ Compiled in 124ms
+[01:20:50.141] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[01:20:52.460] Browser ERROR   ./middleware.ts
+Middleware is missing expected function export name
+This function is what Next.js runs for every request handled by this middleware.
+
+Why this happens:
+- The file exists but doesn't export a function.
+- The export is not a function (e.g., an object or constant).
+- There's a syntax error preventing the export from being recognized.
+
+To fix it:
+- Ensure this file has either a default or "middleware" function export.
+
+Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[01:20:52.660] Browser ERROR   ./middleware.ts
+Middleware is missing expected function export name
+This function is what Next.js runs for every request handled by this middleware.
+
+Why this happens:
+- The file exists but doesn't export a function.
+- The export is not a function (e.g., an object or constant).
+- There's a syntax error preventing the export from being recognized.
+
+To fix it:
+- Ensure this file has either a default or "middleware" function export.
+
+Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[01:20:54.128] Server  LOG      ○ Compiling /_error ...
+[01:20:54.471] Browser ERROR   ./middleware.ts
+Middleware is missing expected function export name
+This function is what Next.js runs for every request handled by this middleware.
+
+Why this happens:
+- The file exists but doesn't export a function.
+- The export is not a function (e.g., an object or constant).
+- There's a syntax error preventing the export from being recognized.
+
+To fix it:
+- Ensure this file has either a default or "middleware" function export.
+
+Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[01:20:54.471] Browser ERROR   ./middleware.ts
+Middleware is missing expected function export name
+This function is what Next.js runs for every request handled by this middleware.
+
+Why this happens:
+- The file exists but doesn't export a function.
+- The export is not a function (e.g., an object or constant).
+- There's a syntax error preventing the export from being recognized.
+
+To fix it:
+- Ensure this file has either a default or "middleware" function export.
+
+Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[01:20:55.269] Browser ERROR   ./middleware.ts
+Middleware is missing expected function export name
+This function is what Next.js runs for every request handled by this middleware.
+
+Why this happens:
+- The file exists but doesn't export a function.
+- The export is not a function (e.g., an object or constant).
+- There's a syntax error preventing the export from being recognized.
+
+To fix it:
+- Ensure this file has either a default or "middleware" function export.
+
+Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[01:20:55.269] Browser ERROR   ./middleware.ts
+Middleware is missing expected function export name
+This function is what Next.js runs for every request handled by this middleware.
+
+Why this happens:
+- The file exists but doesn't export a function.
+- The export is not a function (e.g., an object or constant).
+- There's a syntax error preventing the export from being recognized.
+
+To fix it:
+- Ensure this file has either a default or "middleware" function export.
+
+Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[01:21:02.081] Browser ERROR   {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzdHVkZW50MUBnbWFpbC5jb20iLCJleHAiOjE3NjUxNzQ1OTh9.qZl1TjncVoxdOZIBZkwwJgn0RdEVT5g0GCqlm68Jpxk"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"http://127.0.0.1:8000/profile","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_eb27d6ac._.js:3706:16\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_eb27d6ac._.js:4221:174\n","status":401}
+[01:21:41.763] Server  ERROR    ⨯ Error: The default export is not a React Component in "/dashboard/not-found"
+[01:21:42.675] Server  ERROR    ⨯ Error: The default export is not a React Component in "/dashboard/not-found"
+[01:21:43.105] Server  LOG      ✓ Compiled in 2.5s
+[01:21:43.400] Server  LOG      ✓ Compiled in 0ms
+[01:21:46.663] Browser ERROR   {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzdHVkZW50MUBnbWFpbC5jb20iLCJleHAiOjE3NjUxNzQ1OTh9.qZl1TjncVoxdOZIBZkwwJgn0RdEVT5g0GCqlm68Jpxk"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"http://127.0.0.1:8000/profile","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_eb27d6ac._.js:3706:16\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_eb27d6ac._.js:4221:174\n","status":401}
+[01:22:00.100] Browser ERROR   {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzdHVkZW50MUBnbWFpbC5jb20iLCJleHAiOjE3NjUxNzQ1OTh9.qZl1TjncVoxdOZIBZkwwJgn0RdEVT5g0GCqlm68Jpxk"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"http://127.0.0.1:8000/profile","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 401","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_eb27d6ac._.js:3706:16\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_eb27d6ac._.js:4221:174\n","status":401}
+[01:24:05.746] Server  LOG      ✓ Compiled in 513ms

@@ -54,3 +54,11 @@ class UserSubscription(Base):
     start_date = Column(DateTime, default=datetime.utcnow)
     end_date = Column(DateTime)
     is_active = Column(Boolean, default=True)
+    
+class Note(Base):
+    __tablename__ = "notes"
+    id = Column(Integer,primary_key= True, index = True)
+    content = Column(String)
+    user_id = Column(Integer,ForeignKey("users.id"))
+    subject_id = Column(Integer,ForeignKey("subjects.id"))
+
